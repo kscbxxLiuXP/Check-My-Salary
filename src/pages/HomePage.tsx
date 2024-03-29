@@ -1,13 +1,6 @@
 import { Header } from "@/components/Header/Header.tsx";
 import { Info } from "@/components/Info";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Checkbox,
-  Image,
-  Input
-} from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Checkbox, Input } from "@nextui-org/react";
 import { useState } from "react";
 import { IoWarning } from "react-icons/io5";
 import "./HomePage.scss";
@@ -23,12 +16,12 @@ export function HomePage() {
   const [sick_leave, set_sick_leave] = useState("0"); //病假
   const [late, set_late] = useState("0"); //迟到
 
-  const get_my_salary = () => {
-    const data = Object.create(null);
-    data.base_salary = 1;
-    //base4500 + 加班 +餐补+房补+绩效 - 扣款
-    return;
-  };
+  // const get_my_salary = () => {
+  //   const data = Object.create(null);
+  //   data.base_salary = 1;
+  //   //base4500 + 加班 +餐补+房补+绩效 - 扣款
+  //   return;
+  // };
   return (
     <>
       <div className="flex flex-col min-h-screen">
